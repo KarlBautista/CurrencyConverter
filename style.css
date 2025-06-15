@@ -1,0 +1,215 @@
+.main-container{
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+
+
+
+}
+
+.title-container{
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: gold;
+    font-size: 1.5rem;
+
+  
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 20%);
+    border: 5px solid gold;
+    border-radius: 10px;
+    width: 50%;
+    height: 60%;
+    
+  
+}
+
+
+.top{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.input-container{
+    width: 50%;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+  
+   padding: 10px;
+}
+
+#base{
+    height: 40%;
+    font-size: 1.5rem;
+    width: 70%;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+
+.base-dropbox-container{
+    width: 50%;
+    display: flex;
+ 
+   
+    align-items: center;
+    justify-content:center;
+}
+
+#base-dropbox{
+    height: 30%;
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: center;
+    border-radius: 15px;
+    
+}
+
+
+
+.bottom{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.output-container{
+    width: 50%;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+  
+   padding: 10px;
+}
+
+#output{
+    height: 40%;
+    font-size: 1.5rem;
+    width: 70%;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+.output-dropbox-container{
+    width: 50%;
+    display: flex;
+ 
+   
+    align-items: center;
+    justify-content: center;
+}
+
+#output-dropbox-options{
+    height: 30%;
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.button-container{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#convert{
+    border: none;
+    height: 50px;
+    width: 150px;
+    background-color: gold;
+    color:  white;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.middle{
+    background-color: gold;
+    width: 100%;
+    height: 5px;
+}
+
+.middle p{
+    font-size: 1.5rem;
+    color: white;
+   
+
+}
+
+#convert:hover{
+    background-color: hsl(51, 100%, 60%);
+    color: black;
+
+}
+
+/* ✨ Smooth Input Hover */
+input, select {
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+
+input:hover, select:hover {
+    box-shadow: 0px 0px 8px gold;
+    border: 2px solid gold;
+}
+
+/* 🎉 Convert Button Hover Effect */
+#convert:hover {
+    background-color: hsl(51, 100%, 60%);
+    color: black;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+#convert:active{
+    transform: scale(1.5);
+}
+
+/* 💥 Pop Effect for Output */
+.pop-effect {
+    animation: pop 0.5s ease-in-out;
+}
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+/* 🎈 Bubble Animation */
+.bubble {
+    position: absolute;
+    background-color: gold;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: floatUp 2s ease-in-out;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100px); opacity: 0; }
+}
